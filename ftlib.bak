@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------------
+FtMscLib.dll Version  01.05.11  (2012/02/19)
+FtLogLevel= 0
+22:05:22:395, Initialization of Library 'ftMscLib.dll' ...
+
+INFO:   size FTX1_SHMIFINFO   = 64
+INFO:   size FTX1_STATE       = 100
+INFO:   size FTX1_CONFIG      = 88
+INFO:   size FTX1_INPUT       = 68
+INFO:   size FTX1_OUTPUT      = 44
+INFO:   size FTX1_DISPLAY     = 108
+INFO:   size TRANSFER_STATUS  = 4
+INFO:   size CHANGE_STATE     = 8
+INFO:   size RP_TIMER         = 12
+INFO:   size MOTOR            = 24
+INFO:   size INPUT_SIM        = 4
+INFO:   size HOOK_TABLE       = 140
+INFO:   RESERVE_SIZE          = 360
+INFO:   size FISH_X1_TRANSFER = 1024
+INFO: size IF08_MAX           = 9
+INFO: size IF08_TRANSFER      = 9216
+
+22:05:22:395, Creating event objects...
+22:05:22:395, Starting thread [WaitMmRpTmEvent]...
+22:05:22:395,   [WaitMmRpTmEvent] started, hRpTmThrWait= 584
+22:05:22:395, Starting thread [WaitMmEvent]...
+22:05:22:395,   [WaitMmEventThread] started, hThrWait= 592
+22:05:22:395, Starting thread [FtRequestThread]...
+22:05:22:396,   [FtRequestThread] started, hThrRequest= 596
+22:05:22:396, Starting MMTimer... (mmRpTimerId= 16)
+22:05:22:396, ftMscLib is initialized ...
+
+22:05:22:396, OpenComDevice(), comStr= COM1 
+22:05:22:396, ftxOpenComDevice(), ftHandle= 612
+22:05:22:396, Starting thread [ReadComThread]...
+22:05:22:397, Thread [ReadComThread] started..., hComRead= 616, IdComReadThread= 6396
+22:05:22:397, Open Fish.X1 connection...
+22:05:28:901, CloseComDevice, ftHandle= 612
+22:05:28:901, cancel thread [ReadComThread]...
+22:05:28:904, Error: ftxOpenComDevice(), error= -536866804 (e000100c)
